@@ -64,6 +64,9 @@ class_button = WebDriverWait(driver, 20).until(EC.presence_of_element_located((B
 
 class_button.click()
 
+assignments_tab = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, "//div[text()='Assignments']")))
+
+assignments_tab.click()
 
 assignment_button = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.LINK_TEXT, ASSIGNMENT_NAME)))
 
